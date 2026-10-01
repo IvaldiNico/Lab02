@@ -15,7 +15,7 @@ def carica_da_file(file_path):
                     codice = row[0]
                     titolo = row[1]
                     autore = row[2]
-                    mese = int(row[3])  # Convertito in intero per i controlli successivi
+                    mese = row[3]  # Convertito in intero per i controlli successivi
                     anno = row[4]
 
                     # Se l'anno non esiste nell'album, lo creiamo vuoto
@@ -73,6 +73,8 @@ def cerca_foto(album, codice):
             mese = dati[2]
             # Formattazione richiesta: "codice, titolo, autore, mese, anno"
             return f"{codice}, {titolo}, {autore}, {mese}, {anno}"
+        else:
+            return None
     return None
 
 
