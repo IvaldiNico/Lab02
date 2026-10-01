@@ -74,8 +74,6 @@ def cerca_foto(album, codice):
             mese = dati[2]
             # Formattazione richiesta: "codice, titolo, autore, mese, anno"
             return f"{codice}, {titolo}, {autore}, {mese}, {anno}"
-        else:
-            return None
     return None
 
 
