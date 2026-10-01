@@ -23,6 +23,7 @@ def carica_da_file(file_path):
                         album[anno] = {}
                     # Inseriamo i dati della foto usando il codice come chiave
                     album[anno][codice] = [titolo, autore, mese]
+            print("album caricato")
             return album
 
     except FileNotFoundError:
